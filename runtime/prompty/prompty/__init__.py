@@ -24,7 +24,8 @@ def load_global_config(
     prompty_path: Path = Path.cwd(), configuration: str = "default"
 ) -> Dict[str, any]:
     # prompty.config laying around?
-    prompty_config = list(Path.cwd().glob("**/prompty.json"))
+    # prompty_config = list(Path.cwd().glob("**/prompty.json"))
+    prompty_config = []
 
     # if there is one load it
     if len(prompty_config) > 0:
